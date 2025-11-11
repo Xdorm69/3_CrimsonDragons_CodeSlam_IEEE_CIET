@@ -1,15 +1,20 @@
-import { ModeToggle } from "@/components/ToggleButton";
-import MaxWidthWrapper from "@/components/Wrappers/MaxWidthWrapper";
-import React from "react";
+import HomePage from "@/components/Sections/HomePage";
+import InstagramPage from "@/components/Sections/InstagramPage";
+import LatestBlogPage from "@/components/Sections/LatestBlogPage";
+import ProductPage from "@/components/Sections/ProductPage";
+import LenisWrapper from "@/components/Wrappers/LenisWrapper";
 
-const HomePage = () => {
+const MainPage = () => {
   return (
-    <div>
-      <MaxWidthWrapper>
-        <h1>CodeSlam2.0</h1> <ModeToggle />
-      </MaxWidthWrapper>
-    </div>
+    <main>
+      <LenisWrapper>
+        <HomePage />
+        <ProductPage />
+        <LatestBlogPage />
+        <InstagramPage />
+      </LenisWrapper>
+    </main>
   );
 };
 
-export default HomePage;
+export default MainPage;
